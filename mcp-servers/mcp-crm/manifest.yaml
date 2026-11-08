@@ -1,0 +1,16 @@
+name: mcp-crm
+status: OPEN
+transport: stdio
+exposure: internal-only
+wraps: |
+  Coopreta CRM and customer records
+feeds: |
+  Customer Finder, Mandi Price and Buyer Connect
+default_guardrail_tier: human_review
+tools:
+  - name: search_customers
+    status: OPEN
+    guardrail_tier: human_review
+  - name: rank_leads
+    status: OPEN
+    guardrail_tier: human_review

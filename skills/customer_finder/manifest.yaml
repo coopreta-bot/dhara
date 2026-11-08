@@ -1,0 +1,12 @@
+name: customer_finder
+display_name: Customer Finder / Lead Matching
+status: OPEN
+guardrail_tier: auto
+purpose: |
+  Ranks prospective CSP, vermicompost, and bio-input customers for field-agent visits.
+guardrail: |
+  Ranking only. Outreach messages that commit Coopreta are human-reviewed.
+tools:
+  - mcp-crm
+data_scope:
+  - crm

@@ -1,0 +1,14 @@
+name: market_research_demand
+display_name: Market Research and Demand Signal
+status: OPEN
+guardrail_tier: auto
+purpose: |
+  Projects local demand from Coopreta sales history plus public agri-statistics.
+guardrail: |
+  Read-only projections. They feed BI and do not place orders.
+tools:
+  - mcp-market
+  - mcp-ledger
+data_scope:
+  - sales_history
+  - mandi_prices

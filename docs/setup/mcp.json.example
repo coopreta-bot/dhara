@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "mcp-crm": {
+      "command": "python",
+      "args": ["mcp-servers/mcp-crm/server.py"]
+    },
+    "mcp-ledger": {
+      "command": "python",
+      "args": ["mcp-servers/mcp-ledger/server.py"]
+    },
+    "mcp-documents": {
+      "command": "python",
+      "args": ["mcp-servers/mcp-documents/server.py"]
+    },
+    "mcp-agri-data": {
+      "command": "python",
+      "args": ["mcp-servers/mcp-agri-data/server.py"]
+    },
+    "mcp-market": {
+      "command": "python",
+      "args": ["mcp-servers/mcp-market/server.py"]
+    }
+  }
+}

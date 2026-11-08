@@ -1,0 +1,12 @@
+name: grievance_escalation
+display_name: Grievance and Escalation Drafting
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Drafts RTI, RBI/DPIIT/Collector letters, and related filings from the escalation corpus.
+guardrail: |
+  Human sign-off is mandatory before any filing.
+tools:
+  - mcp-documents
+data_scope:
+  - legal_escalation_corpus

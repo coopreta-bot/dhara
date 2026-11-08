@@ -1,0 +1,13 @@
+name: krishi_salah
+display_name: Krishi Salah
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Crop and input guidance grounded in agronomy RAG, including Dr. Bacto's and Kalmegh product Q&A.
+guardrail: |
+  Informational by default. No autonomous input-mix prescription above the stated risk threshold without a human agronomist sign-off.
+tools:
+  - mcp-agri-data
+data_scope:
+  - agri_plots
+  - product_specs

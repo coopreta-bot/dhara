@@ -1,0 +1,13 @@
+name: legal_compliance_draft
+display_name: Legal and Compliance Drafting
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Contracts, policy documents, and DPIIT/MSME filings.
+guardrail: |
+  Legal and regulatory output is HUMAN REVIEW REQUIRED and cannot auto-execute.
+tools:
+  - mcp-documents
+data_scope:
+  - legal_escalation_corpus
+  - government_schemes

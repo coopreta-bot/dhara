@@ -1,0 +1,15 @@
+# Runs Black and Ruff from the environment that installed the dev extra.
+# `language: system` avoids pinning a hook revision that this scaffold has not verified.
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: black
+        language: system
+        types: [python]
+      - id: ruff
+        name: ruff
+        entry: ruff check --fix
+        language: system
+        types: [python]

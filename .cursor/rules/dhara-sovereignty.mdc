@@ -1,0 +1,21 @@
+---
+description: Sovereignty, status vocabulary, and release gates for Coopreta Dhara (Module 14).
+alwaysApply: true
+---
+
+# Dhara sovereignty and status
+
+This repo is Coopreta One Module 14. Read `GOVERNANCE.md` before changing status claims.
+
+- Do not add a runtime call to OpenAI, Anthropic, Google, or any other third-party inference or embeddings API. Self-hosted open-weight models and rented GPUs are allowed. Weights and farmer data stay inside Coopreta's boundary.
+- Use only these status words: PASS, IMPLEMENTED, LIVE VERIFIED, CONDITIONALLY VERIFIED, OPEN, BLOCKED, HUMAN REVIEW REQUIRED, SECURITY GATE BLOCKED.
+- Do not mark work LIVE VERIFIED or PASS without evidence stored in the repo or linked from `GOVERNANCE.md`. Author assurance is not evidence.
+- Financial, legal, and regulatory skill output is HUMAN REVIEW REQUIRED and must not auto-execute.
+- Krishi SOS must escalate severe alerts to a human. It must not give the final agronomy or veterinary decision.
+- Do not provision GPU, database, or Redpanda infrastructure into the current AWS account while `GOVERNANCE.md` lists that foundation as SECURITY GATE BLOCKED.
+- New product skills get `skills/<id>/manifest.yaml`. New tools go through `mcp-servers/`, not a private client inside a skill.
+- Do not commit secrets, raw farmer documents, or model weights.
+
+## Required response ending
+
+- Every user-facing response MUST end with exactly one `Next move:` line naming one concrete next action. Never omit it, make it optional, or list multiple moves or alternatives. If the task is complete, name the single next action needed to use or verify the result; when no user action is needed, name the next useful project action supported by context.

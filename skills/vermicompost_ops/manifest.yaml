@@ -1,0 +1,13 @@
+name: vermicompost_ops
+display_name: Vermicompost Ops and Subsidy
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Bed scaling, OPEX/CAPEX tracking, and NABARD/RKVY/NMSA subsidy filing assistance.
+guardrail: |
+  Regulatory filings stay in the Maker/Checker queue.
+tools:
+  - mcp-documents
+data_scope:
+  - vermicompost_ops
+  - government_schemes

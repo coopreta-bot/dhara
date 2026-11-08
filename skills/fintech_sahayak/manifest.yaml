@@ -1,0 +1,12 @@
+name: fintech_sahayak
+display_name: Fintech Sahayak
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  AEPS/DMT/BBPS/CSP transaction help and dispute triage.
+guardrail: |
+  HUMAN REVIEW REQUIRED for anything that touches money movement.
+tools:
+  - mcp-ledger
+data_scope:
+  - csp_transactions

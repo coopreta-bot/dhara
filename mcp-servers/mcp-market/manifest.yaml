@@ -1,0 +1,16 @@
+name: mcp-market
+status: OPEN
+transport: stdio
+exposure: internal-only
+wraps: |
+  Mandi price feed and CRM inventory
+feeds: |
+  Mandi Price and Buyer Connect, Market Research and Demand Signal
+default_guardrail_tier: human_review
+tools:
+  - name: get_mandi_prices
+    status: OPEN
+    guardrail_tier: human_review
+  - name: list_inventory
+    status: OPEN
+    guardrail_tier: human_review

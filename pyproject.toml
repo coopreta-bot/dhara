@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "coopreta-dhara"
+version = "0.0.0"
+description = "Coopreta Dhara — sovereign agentic AI, Module 14 of Coopreta One"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=2",
+    "pyyaml>=6",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "pydantic>=2",
+    "sqlalchemy[asyncio]>=2.0",
+    "asyncpg>=0.29",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pytest",
+    "pre-commit",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

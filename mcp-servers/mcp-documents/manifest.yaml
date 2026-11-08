@@ -1,0 +1,16 @@
+name: mcp-documents
+status: OPEN
+transport: stdio
+exposure: internal-only
+wraps: |
+  Document and evidence store (Module 02)
+feeds: |
+  PACS/KCC Documentation, Grievance and Escalation Drafting
+default_guardrail_tier: human_review
+tools:
+  - name: search_documents
+    status: OPEN
+    guardrail_tier: human_review
+  - name: get_document
+    status: OPEN
+    guardrail_tier: human_review

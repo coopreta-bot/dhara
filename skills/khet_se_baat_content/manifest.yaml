@@ -1,0 +1,12 @@
+name: khet_se_baat_content
+display_name: Khet Se Baat Content Engine
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Hinglish farmer-facing social content in the CMD persona, plus the engagement question bank.
+guardrail: |
+  Public posting is human-reviewed. Draft generation does not publish by itself.
+tools:
+  - mcp-documents
+data_scope:
+  - social_media_corpus

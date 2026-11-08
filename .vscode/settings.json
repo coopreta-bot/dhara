@@ -1,0 +1,25 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  "ruff.nativeServer": true,
+  "black-formatter.path": [
+    "${workspaceFolder}\\.venv\\Scripts\\black.exe"
+  ],
+  "yaml.validate": true,
+  "yaml.format.enable": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "third_party": true
+  },
+  "git.ignoreLimitWarning": true
+}

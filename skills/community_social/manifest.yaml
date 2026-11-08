@@ -1,0 +1,12 @@
+name: community_social
+display_name: Community and Social Layer
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Moderated farmer-to-farmer Q&A. Dhara fact-checks before an answer reaches other farmers.
+guardrail: |
+  Nothing is published to other farmers until a human moderator accepts it. Accepted Q&A may later enter RAG.
+tools:
+  - mcp-documents
+data_scope:
+  - community_qa

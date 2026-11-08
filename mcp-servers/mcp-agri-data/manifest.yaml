@@ -1,0 +1,16 @@
+name: mcp-agri-data
+status: OPEN
+transport: stdio
+exposure: internal-only
+wraps: |
+  Farm, plot, and satellite records
+feeds: |
+  Krishi Salah, Satellite Crop Intelligence, Krishi SOS
+default_guardrail_tier: auto
+tools:
+  - name: get_plot
+    status: OPEN
+    guardrail_tier: auto
+  - name: get_ndvi
+    status: OPEN
+    guardrail_tier: auto

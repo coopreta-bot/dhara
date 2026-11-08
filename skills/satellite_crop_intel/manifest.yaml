@@ -1,0 +1,12 @@
+name: satellite_crop_intel
+display_name: Satellite Crop Intelligence
+status: OPEN
+guardrail_tier: auto
+purpose: |
+  NDVI and soil-moisture trends for registered plots, as advisories to Krishi Salah and Krishi SOS.
+guardrail: |
+  Advisory only. Every answer cites imagery date, source, and confidence.
+tools:
+  - mcp-agri-data
+data_scope:
+  - satellite_ndvi

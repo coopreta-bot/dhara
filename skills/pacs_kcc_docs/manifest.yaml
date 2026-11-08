@@ -1,0 +1,12 @@
+name: pacs_kcc_docs
+display_name: PACS/KCC Documentation
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Drafts and checks KCC loan paperwork from UniTERP-derived templates.
+guardrail: |
+  Maker/Checker before any submission.
+tools:
+  - mcp-documents
+data_scope:
+  - pacs_kcc

@@ -1,0 +1,9 @@
+code: _template
+status: OPEN
+languages: []
+data_protection_law: REPLACE
+credit_guarantee_scheme: REPLACE
+rag_slice: REPLACE
+continued_pretraining_slice: REPLACE
+notes: |
+  Copy this folder to i18n/<geo-code>. Do not put geography rules inside skill code.

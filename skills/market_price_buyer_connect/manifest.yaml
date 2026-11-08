@@ -1,0 +1,14 @@
+name: market_price_buyer_connect
+display_name: Mandi Price and Buyer Connect
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Public mandi prices matched to Coopreta seller inventory and CRM buyer leads.
+guardrail: |
+  Maker/Checker before any binding transaction. Every price cites source and as-of date.
+tools:
+  - mcp-market
+  - mcp-crm
+data_scope:
+  - mandi_prices
+  - crm

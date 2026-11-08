@@ -1,0 +1,12 @@
+name: bi_decision_support
+display_name: BI / Decision Support
+status: OPEN
+guardrail_tier: auto
+purpose: |
+  Natural-language questions over the Economic Graph and BI layer.
+guardrail: |
+  Read-only. Any action that moves money or files a document is refused here and routed to a gated skill.
+tools:
+  - mcp-ledger
+data_scope:
+  - economic_graph

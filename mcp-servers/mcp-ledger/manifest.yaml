@@ -1,0 +1,16 @@
+name: mcp-ledger
+status: OPEN
+transport: stdio
+exposure: internal-only
+wraps: |
+  Economic Graph and ledger (Module 13)
+feeds: |
+  BI / Decision Support, Fintech Sahayak
+default_guardrail_tier: human_review
+tools:
+  - name: query_ledger
+    status: OPEN
+    guardrail_tier: human_review
+  - name: list_transactions
+    status: OPEN
+    guardrail_tier: human_review

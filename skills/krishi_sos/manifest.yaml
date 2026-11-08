@@ -1,0 +1,13 @@
+name: krishi_sos
+display_name: Krishi SOS
+status: OPEN
+guardrail_tier: human_review
+purpose: |
+  Multi-channel emergency triage for crop disease, pests, extreme weather, and livestock, with escalation to a human.
+guardrail: |
+  A severe alert always escalates to a human. The model never replaces an agronomist or vet.
+tools:
+  - mcp-agri-data
+data_scope:
+  - sos_alerts
+  - satellite_ndvi
