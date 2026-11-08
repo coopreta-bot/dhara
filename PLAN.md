@@ -6,7 +6,8 @@ The phase prompts and commands live in [docs/plan/phases.md](docs/plan/phases.md
 Current step: **Phase 0 scaffold is in the tree; Phase 1 has async database
 lifecycle wiring, local consent-gated chunk staging, and a self-hosted
 pgvector migration/loader, local integration-environment, and remote CI
-integration artifacts; the RAG runtime remains OPEN.**
+integration artifacts; the published pgvector job is BLOCKED by the GitHub
+account billing lock, and the RAG runtime remains OPEN.**
 
 ## Now
 
